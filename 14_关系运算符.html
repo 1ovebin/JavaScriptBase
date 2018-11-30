@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>关系运算符</title>
+</head>
+<body>
+  <script>
+    /*
+      * 通过关系运算符可以比较两个值之间的大小关系，
+      * 	如果关系成立它会返回true，如果关系不成立则返回false
+      * 
+      * > 大于号
+      * 	- 判断符号左侧的值是否大于右侧的值
+      * 	- 如果关系成立，返回true，如果关系不成立则返回false
+      * 
+      * >= 大于等于
+      * 	- 判断符号左侧的值是否大于或等于右侧的值
+      * 
+      * < 小于号
+      * <= 小于等于
+      * 
+      * 非数值的情况
+      * 	- 对于非数值进行比较时，会将其转换为数字然后在比较
+      * 	- 如果符号两侧的值都是字符串时，不会将其转换为数字进行比较
+      * 		而会分别比较字符串中字符的Unicode编码
+    */  
+
+    result = 5 > 6; //false
+    result = 5 >= 5; //true
+
+    result = 6 < 5; //false
+    result = 5 <= 5; //true
+    
+    result = 5 > 'hello'  //false
+
+    result = 'a' < 'b'  //true
+    
+  </script>
+</body>
+</html>
